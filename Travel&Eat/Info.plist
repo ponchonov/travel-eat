@@ -45,5 +45,14 @@
 		<string>SF-Pro-Text-Regular.otf</string>
 		<string>SF-Pro-Text-Medium.otf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationUsageDescription</key>
+	<string>Travel &amp; eat wants to know where are you to offer you the best places</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Travel &amp; eat wants to know where are you to offer you the best places</string>
 </dict>
 </plist>

@@ -27,9 +27,12 @@ class OnboardingPageViewController: UIPageViewController {
     
     @objc func skipTapped() {
         guard let delegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        // mark onboarding as viewed
+        DefaultsData().onboardingViewed = true
         
+        //open Main view
         DispatchQueue.main.async {
-            delegate.window?.rootViewController = ViewController()
+            delegate.window?.rootViewController = TabBarViewController()
             delegate.window?.makeKeyAndVisible()
         }
     }

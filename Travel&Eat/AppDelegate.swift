@@ -19,7 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        window?.rootViewController = OnboardingPageViewController()
+        if (DefaultsData().onboardingViewed) {
+            window?.rootViewController = TabBarViewController()
+        } else {
+            window?.rootViewController = OnboardingPageViewController()
+        }
         window?.makeKeyAndVisible()
         
         return true

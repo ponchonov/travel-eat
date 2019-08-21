@@ -36,6 +36,14 @@
 		979F4F83230DB50500E9C4AE /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F71230DB50500E9C4AE /* SF-Pro-Text-RegularItalic.otf */; };
 		979F4F85230DB51900E9C4AE /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F84230DB51900E9C4AE /* Font.swift */; };
 		979F4F87230DBBCC00E9C4AE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F86230DBBCC00E9C4AE /* View.swift */; };
+		979F4F89230DCF3E00E9C4AE /* DefaultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F88230DCF3E00E9C4AE /* DefaultsData.swift */; };
+		979F4F8C230DD0AD00E9C4AE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F8B230DD0AD00E9C4AE /* TabBarViewController.swift */; };
+		979F4F8E230DD0F700E9C4AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F8D230DD0F700E9C4AE /* HomeViewController.swift */; };
+		979F4F90230DD10300E9C4AE /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F8F230DD10300E9C4AE /* FavoritesViewController.swift */; };
+		979F4F92230DD11700E9C4AE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F91230DD11700E9C4AE /* MapViewController.swift */; };
+		979F4F94230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F93230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift */; };
+		979F4F99230DDC0100E9C4AE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F98230DDC0100E9C4AE /* APIManager.swift */; };
+		979F4F9B230DE09A00E9C4AE /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F9A230DE09A00E9C4AE /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +88,14 @@
 		979F4F71230DB50500E9C4AE /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		979F4F84230DB51900E9C4AE /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		979F4F86230DBBCC00E9C4AE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		979F4F88230DCF3E00E9C4AE /* DefaultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsData.swift; sourceTree = "<group>"; };
+		979F4F8B230DD0AD00E9C4AE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		979F4F8D230DD0F700E9C4AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		979F4F8F230DD10300E9C4AE /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		979F4F91230DD11700E9C4AE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		979F4F93230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTabBarSectionViewController.swift; sourceTree = "<group>"; };
+		979F4F98230DDC0100E9C4AE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		979F4F9A230DE09A00E9C4AE /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +161,7 @@
 		979F4F50230DB32800E9C4AE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				979F4F9A230DE09A00E9C4AE /* City.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,6 +169,7 @@
 		979F4F51230DB32E00E9C4AE /* API */ = {
 			isa = PBXGroup;
 			children = (
+				979F4F98230DDC0100E9C4AE /* APIManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -161,6 +179,7 @@
 			children = (
 				979F4F5B230DB4C900E9C4AE /* Fonts */,
 				979F4F86230DBBCC00E9C4AE /* View.swift */,
+				979F4F88230DCF3E00E9C4AE /* DefaultsData.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -168,6 +187,7 @@
 		979F4F53230DB34000E9C4AE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				979F4F8A230DD07D00E9C4AE /* TabBar */,
 				979F4F54230DB41B00E9C4AE /* Onboarding */,
 				979F4F32230DB1BC00E9C4AE /* ViewController.swift */,
 			);
@@ -177,8 +197,8 @@
 		979F4F54230DB41B00E9C4AE /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				979F4F55230DB44600E9C4AE /* OnboardingViewController.swift */,
 				979F4F58230DB48900E9C4AE /* OnboardingPageViewController.swift */,
+				979F4F55230DB44600E9C4AE /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -215,6 +235,42 @@
 				979F4F63230DB50400E9C4AE /* SF-Pro-Text-UltralightItalic.otf */,
 			);
 			path = "SFO-Pro-text";
+			sourceTree = "<group>";
+		};
+		979F4F8A230DD07D00E9C4AE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F8B230DD0AD00E9C4AE /* TabBarViewController.swift */,
+				979F4F93230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift */,
+				979F4F95230DD6EC00E9C4AE /* Home */,
+				979F4F96230DD6F200E9C4AE /* Favorites */,
+				979F4F97230DD6FA00E9C4AE /* Map */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		979F4F95230DD6EC00E9C4AE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F8D230DD0F700E9C4AE /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		979F4F96230DD6F200E9C4AE /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F8F230DD10300E9C4AE /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		979F4F97230DD6FA00E9C4AE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F91230DD11700E9C4AE /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,11 +391,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979F4F92230DD11700E9C4AE /* MapViewController.swift in Sources */,
+				979F4F8C230DD0AD00E9C4AE /* TabBarViewController.swift in Sources */,
 				979F4F59230DB48900E9C4AE /* OnboardingPageViewController.swift in Sources */,
 				979F4F33230DB1BC00E9C4AE /* ViewController.swift in Sources */,
 				979F4F87230DBBCC00E9C4AE /* View.swift in Sources */,
 				979F4F85230DB51900E9C4AE /* Font.swift in Sources */,
+				979F4F9B230DE09A00E9C4AE /* City.swift in Sources */,
+				979F4F8E230DD0F700E9C4AE /* HomeViewController.swift in Sources */,
 				979F4F56230DB44600E9C4AE /* OnboardingViewController.swift in Sources */,
+				979F4F89230DCF3E00E9C4AE /* DefaultsData.swift in Sources */,
+				979F4F90230DD10300E9C4AE /* FavoritesViewController.swift in Sources */,
+				979F4F99230DDC0100E9C4AE /* APIManager.swift in Sources */,
+				979F4F94230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift in Sources */,
 				979F4F31230DB1BC00E9C4AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
