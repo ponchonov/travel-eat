@@ -30,6 +30,8 @@ class HomeViewController: MasterTabBarSectionViewController {
         t.register(CityTableViewCell.self, forCellReuseIdentifier: "city")
         t.separatorColor = .clear
         t.isHidden = true
+        t.rowHeight = UITableView.automaticDimension
+
         return t
     }()
     
@@ -47,7 +49,7 @@ class HomeViewController: MasterTabBarSectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Home"
-        searchBar.placeholder = "Cities"
+        searchBar.placeholder = "Try with New York"
 
     }
     
@@ -65,14 +67,11 @@ class HomeViewController: MasterTabBarSectionViewController {
                 loadingIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
                 loadingIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             ])
-        
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
-        gesture.numberOfTapsRequired = 1
-        view.addGestureRecognizer(gesture)
     }
     
     @objc func viewTapped() {
         searchBar.resignFirstResponder()
+        
     }
     
     override func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
@@ -128,4 +127,14 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let v = CitySelectedViewController(city: cities[indexPath.row])
+        
+        self.show(v, sender: nil)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        viewTapped()
+    }
 }

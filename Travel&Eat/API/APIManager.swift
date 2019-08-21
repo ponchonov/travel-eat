@@ -78,4 +78,33 @@ class APIManager: NSObject {
         }
     }
     
+    func getCollectionsWith(cityId:Int,completion: @escaping (_ collections:[Collection],_ error: Error?) -> Void)  {
+        var collections = [Collection]()
+        
+        let request = mutableRequest(url:  NSURL(string: "\(baseURL)/collections")! as URL)
+
+        let parameters = [
+            "city_id": "\(cityId)"
+            ] as [String : Any]
+        
+        apiCallWith(request: request, parameters: parameters) { (data, response, error) in
+            if error == nil {
+                do {
+                    let decoder = JSONDecoder()
+                    guard let data = data else {return}
+                    let item =  try decoder.decode(Collections.self, from: data)
+                    
+                    for col in item.collections {
+                        collections.append(col.collection)
+                    }
+                    completion(collections, nil)
+                } catch let e {
+                    completion(collections, e)
+                }
+            } else {
+                completion(collections, error)
+            }
+        }
+    }
+    
 }
