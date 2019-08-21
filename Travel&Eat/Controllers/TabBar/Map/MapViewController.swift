@@ -38,6 +38,7 @@ class MapViewController: MasterTabBarSectionViewController {
             mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             mapView.topAnchor.constraint(equalTo: view.topAnchor),
             ])
+        
     }
 
 }

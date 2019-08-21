@@ -30,6 +30,7 @@ struct LocationSuggestion: Codable {
 
 struct City: Codable {
     var id : Int
+    var name: String
     var country_id : Int
     var country_name :  String?
     var country_flag_url : String?

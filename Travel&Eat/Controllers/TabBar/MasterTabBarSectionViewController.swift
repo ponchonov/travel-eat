@@ -21,7 +21,6 @@ class MasterTabBarSectionViewController: ViewController {
     
     override func setupView() {
         super.setupView()
-        searchBar.placeholder = "Your placeholder"
         searchBar.delegate = self
         self.navigationItem.titleView = searchBar
     }

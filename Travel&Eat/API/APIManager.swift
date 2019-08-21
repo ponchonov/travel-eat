@@ -22,7 +22,6 @@ class APIManager: NSObject {
         ]
         
         var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
-        
         request.allHTTPHeaderFields = headers
         
         return request

@@ -44,6 +44,8 @@
 		979F4F94230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F93230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift */; };
 		979F4F99230DDC0100E9C4AE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F98230DDC0100E9C4AE /* APIManager.swift */; };
 		979F4F9B230DE09A00E9C4AE /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F9A230DE09A00E9C4AE /* City.swift */; };
+		979F4F9D230DE36D00E9C4AE /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F9C230DE36D00E9C4AE /* CityTableViewCell.swift */; };
+		979F4F9F230DE45600E9C4AE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F9E230DE45600E9C4AE /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		979F4F93230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTabBarSectionViewController.swift; sourceTree = "<group>"; };
 		979F4F98230DDC0100E9C4AE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		979F4F9A230DE09A00E9C4AE /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		979F4F9C230DE36D00E9C4AE /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		979F4F9E230DE45600E9C4AE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,7 @@
 				979F4F5B230DB4C900E9C4AE /* Fonts */,
 				979F4F86230DBBCC00E9C4AE /* View.swift */,
 				979F4F88230DCF3E00E9C4AE /* DefaultsData.swift */,
+				979F4F9E230DE45600E9C4AE /* Color.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				979F4F8D230DD0F700E9C4AE /* HomeViewController.swift */,
+				979F4F9C230DE36D00E9C4AE /* CityTableViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				979F4F59230DB48900E9C4AE /* OnboardingPageViewController.swift in Sources */,
 				979F4F33230DB1BC00E9C4AE /* ViewController.swift in Sources */,
 				979F4F87230DBBCC00E9C4AE /* View.swift in Sources */,
+				979F4F9F230DE45600E9C4AE /* Color.swift in Sources */,
 				979F4F85230DB51900E9C4AE /* Font.swift in Sources */,
 				979F4F9B230DE09A00E9C4AE /* City.swift in Sources */,
 				979F4F8E230DD0F700E9C4AE /* HomeViewController.swift in Sources */,
@@ -403,6 +410,7 @@
 				979F4F89230DCF3E00E9C4AE /* DefaultsData.swift in Sources */,
 				979F4F90230DD10300E9C4AE /* FavoritesViewController.swift in Sources */,
 				979F4F99230DDC0100E9C4AE /* APIManager.swift in Sources */,
+				979F4F9D230DE36D00E9C4AE /* CityTableViewCell.swift in Sources */,
 				979F4F94230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift in Sources */,
 				979F4F31230DB1BC00E9C4AE /* AppDelegate.swift in Sources */,
 			);
