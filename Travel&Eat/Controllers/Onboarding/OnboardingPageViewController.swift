@@ -74,12 +74,12 @@ class OnboardingPageViewController: UIPageViewController {
         
         self.view.addSubview(skipButton)
         NSLayoutConstraint.activate([
-            self.pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -90),
+            self.pageControl.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
             self.pageControl.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: -20),
             self.pageControl.heightAnchor.constraint(equalToConstant: 20),
             self.pageControl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             
-            skipButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40),
+            skipButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20),
             skipButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
     }

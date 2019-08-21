@@ -67,13 +67,13 @@ class OnboardingViewController: UIViewController {
         [backGroundImage, titleText, contentText].forEach(view.addSubview)
         
         NSLayoutConstraint.activate([
-            backGroundImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 125),
+            backGroundImage.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -60),
             backGroundImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-            titleText.topAnchor.constraint(equalTo: backGroundImage.bottomAnchor, constant: 78),
+            titleText.bottomAnchor.constraint(equalTo: contentText.topAnchor, constant: -15),
             titleText.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-            contentText.topAnchor.constraint(equalTo: titleText.bottomAnchor, constant: 20),
+            contentText.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -70),
             contentText.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
             ])
