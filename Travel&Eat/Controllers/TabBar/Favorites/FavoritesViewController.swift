@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoritesViewController: MasterTabBarSectionViewController {
+class FavoritesViewController: ViewController {
 
     lazy var emptyStateLabel:UILabel = {
         let l = UILabel(frame: .zero)
@@ -52,7 +52,7 @@ class FavoritesViewController: MasterTabBarSectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Restaurants"
+        self.title = "Favorites"
         
     }
     

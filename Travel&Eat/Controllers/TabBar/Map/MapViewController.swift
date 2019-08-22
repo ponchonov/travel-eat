@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: MasterTabBarSectionViewController {
+class MapViewController: ViewController {
 
     var locationManager = CLLocationManager()
     var restaurants = [Restaurant]()
