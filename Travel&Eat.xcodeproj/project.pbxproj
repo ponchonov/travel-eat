@@ -209,8 +209,8 @@
 		979F4F53230DB34000E9C4AE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				979F4F8A230DD07D00E9C4AE /* TabBar */,
 				979F4F54230DB41B00E9C4AE /* Onboarding */,
+				979F4F8A230DD07D00E9C4AE /* TabBar */,
 				979F4F32230DB1BC00E9C4AE /* ViewController.swift */,
 			);
 			path = Controllers;

@@ -81,13 +81,13 @@ class OnboardingViewController: UIViewController {
         switch index {
         case 0:
             titleText.text = "Welcome to\nTravel and Eat"
-            contentText.text = "Found restaurants nerby your location\nor plan where to eat in your\nnext Travel."
+            contentText.text = "Found restaurants nearby your location\nor plan where to eat in your\nnext Travel."
         case 1:
             titleText.text = "Search and Save"
             contentText.text = "Search  the restaurants for your next\ntravel and save theirs location"
         case 2:
             titleText.text = "Choose"
-            contentText.text = "Compare between  rating, distance\nand cousine"
+            contentText.text = "Compare between  rating and distance"
             
         default:
             break
