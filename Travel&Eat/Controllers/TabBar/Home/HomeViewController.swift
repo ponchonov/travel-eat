@@ -22,6 +22,14 @@ class HomeViewController: MasterTabBarSectionViewController {
         return l
     }()
     
+    lazy var searchViewEmpty:UIImageView = {
+        let l = UIImageView(frame: .zero)
+        l.image = UIImage(named: "search")
+        l.translatesAutoresizingMaskIntoConstraints = false
+        
+        return l
+    }()
+    
     lazy var tableView: UITableView = {
        let t = UITableView(frame: .zero)
         t.translatesAutoresizingMaskIntoConstraints = false
@@ -56,13 +64,16 @@ class HomeViewController: MasterTabBarSectionViewController {
     override func setupView() {
         super.setupView()
         
-        [labelSearch].forEach(view.addSubview)
+        [searchViewEmpty, labelSearch].forEach(view.addSubview)
         tableView.addToViewAndAddFullConstrainst(for: view)
         [loadingIndicator].forEach(view.addSubview)
 
         NSLayoutConstraint.activate([
-                labelSearch.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+                labelSearch.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 20),
                 labelSearch.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                
+                searchViewEmpty.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+                searchViewEmpty.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
                 
                 loadingIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
                 loadingIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),

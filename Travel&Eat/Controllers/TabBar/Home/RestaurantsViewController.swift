@@ -1,5 +1,5 @@
 //
-//  CitySelectedViewController.swift
+//  RestaurantsViewController.swift
 //  Travel&Eat
 //
 //  Created by Héctor Cuevas on 21/08/19.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class CitySelectedViewController: ViewController {
+class RestaurantsViewController: ViewController {
 
-    var city:City
+    var collection:Collection
     
-    var collections = [Collection]()
+    var restaurants = [Restaurant]()
     
     lazy var collectionView: UICollectionView = {
         let l = UICollectionViewFlowLayout()
@@ -38,28 +38,27 @@ class CitySelectedViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "The best Collections" 
+        self.title = "Restaurants"
         DispatchQueue.main.async {
             self.loadingIndicator.isHidden = false
             self.loadingIndicator.startAnimating()
         }
-        APIManager().getCollectionsWith(cityId: self.city.id) { (collections, error) in
+        APIManager().getRestaurants(collectionId: self.collection.collection_id, completion: { (restaurants, error) in
             DispatchQueue.main.async {
-                self.collections = collections
+                self.restaurants = restaurants
                 self.collectionView.reloadData()
                 self.loadingIndicator.stopAnimating()
                 
-                if collections.count == 0 {
+                if restaurants.count == 0 {
                     self.navigationController?.popViewController(animated: true)
                 }
             }
-        }
-        
+        })
     }
-    
-    init(city:City) {
-        self.city = city
+
+
+    init(collection:Collection) {
+        self.collection = collection
         super.init()
     }
     
@@ -80,23 +79,17 @@ class CitySelectedViewController: ViewController {
 }
 
 
-extension CitySelectedViewController:UICollectionViewDelegate, UICollectionViewDataSource {
+extension RestaurantsViewController:UICollectionViewDelegate, UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return collections.count
+        return restaurants.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection", for: indexPath) as! CollectionRestaurantViewCell
-        cell.collection = self.collections[indexPath.row]
+        cell.restaurant = self.restaurants[indexPath.row]
         return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let v = RestaurantsViewController(collection: collections[indexPath.row])
-        self.show(v, sender: nil)
     }
     
 }

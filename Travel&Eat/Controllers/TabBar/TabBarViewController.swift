@@ -32,7 +32,8 @@ class TabBarViewController: UITabBarController {
     init() {
         super.init(nibName: nil, bundle: nil)
         self.title = homeViewController.title
-        
+        UITabBar.appearance().tintColor = UIColor.tanHide
+
         viewControllers = [homeViewController, favoritesViewController, mapViewCotroller]
         
     }

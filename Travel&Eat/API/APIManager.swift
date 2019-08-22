@@ -107,4 +107,33 @@ class APIManager: NSObject {
         }
     }
     
+    func getRestaurants(collectionId:Int,completion: @escaping (_ restaurants:[Restaurant],_ error: Error?) -> Void)  {
+        var restaurants = [Restaurant]()
+        
+        let request = mutableRequest(url:  NSURL(string: "\(baseURL)/search")! as URL)
+        
+        let parameters = [
+            "collection_id": "\(collectionId)"
+            ] as [String : Any]
+        
+        apiCallWith(request: request, parameters: parameters) { (data, response, error) in
+            if error == nil {
+                do {
+                    let decoder = JSONDecoder()
+                    guard let data = data else {return}
+                    let item =  try decoder.decode(Restaurants.self, from: data)
+                    
+                    for col in item.restaurants {
+                        restaurants.append(col.restaurant)
+                    }
+                    completion(restaurants, nil)
+                } catch let e {
+                    completion(restaurants, e)
+                }
+            } else {
+                completion(restaurants, error)
+            }
+        }
+    }
+    
 }
