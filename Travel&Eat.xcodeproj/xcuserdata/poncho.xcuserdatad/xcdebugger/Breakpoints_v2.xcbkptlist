@@ -9,24 +9,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Travel&amp;Eat/Helpers/UIImage.swift"
-            timestampString = "588115826.9421999"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "downloadImage(url:completion:)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Travel&amp;Eat/Controllers/TabBar/Home/HomeViewController.swift"
-            timestampString = "588125043.924016"
+            timestampString = "588133917.328099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
@@ -42,11 +26,11 @@
                   moduleName = "Travel&amp;Eat"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/poncho/Documents/Travel&amp;Eat/Travel&amp;Eat/Controllers/TabBar/Home/HomeViewController.swift"
-                  timestampString = "588123637.3323621"
+                  timestampString = "588133946.183691"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
                   offsetFromSymbolStart = "144">
                </Location>
                <Location
@@ -57,11 +41,11 @@
                   moduleName = "Travel&amp;Eat"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/poncho/Documents/Travel&amp;Eat/Travel&amp;Eat/Controllers/TabBar/Home/HomeViewController.swift"
-                  timestampString = "588123637.335645"
+                  timestampString = "588133946.185711"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
                   offsetFromSymbolStart = "52">
                </Location>
             </Locations>
@@ -74,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Travel&amp;Eat/Controllers/TabBar/Home/RestaurantsViewController.swift"
-            timestampString = "588125043.924926"
+            timestampString = "588133917.328169"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -90,7 +74,7 @@
                   moduleName = "Travel&amp;Eat"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/poncho/Documents/Travel&amp;Eat/Travel&amp;Eat/Controllers/TabBar/Home/RestaurantsViewController.swift"
-                  timestampString = "588123673.832171"
+                  timestampString = "588133946.193915"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "47"
@@ -105,7 +89,7 @@
                   moduleName = "Travel&amp;Eat"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/poncho/Documents/Travel&amp;Eat/Travel&amp;Eat/Controllers/TabBar/Home/RestaurantsViewController.swift"
-                  timestampString = "588123673.836599"
+                  timestampString = "588133946.197201"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "48"
@@ -122,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Travel&amp;Eat/Controllers/TabBar/Home/RestaurantsViewController.swift"
-            timestampString = "588125043.925004"
+            timestampString = "588133917.328221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -138,12 +122,12 @@
                   moduleName = "Travel&amp;Eat"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/poncho/Documents/Travel&amp;Eat/Travel&amp;Eat/Controllers/TabBar/Home/RestaurantsViewController.swift"
-                  timestampString = "588123675.711682"
+                  timestampString = "588133946.202785"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "46"
                   endingLineNumber = "46"
-                  offsetFromSymbolStart = "623">
+                  offsetFromSymbolStart = "755">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -153,7 +137,7 @@
                   moduleName = "Travel&amp;Eat"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/poncho/Documents/Travel&amp;Eat/Travel&amp;Eat/Controllers/TabBar/Home/RestaurantsViewController.swift"
-                  timestampString = "588123675.7142169"
+                  timestampString = "588133946.204571"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "47"
@@ -170,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Travel&amp;Eat/API/APIManager.swift"
-            timestampString = "588125043.925076"
+            timestampString = "588133917.328323"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "getRestaurants(collectionId:completion:)"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "getRestaurants(latitude:longitude:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -186,12 +170,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Travel&amp;Eat/API/APIManager.swift"
-            timestampString = "588125043.925153"
+            timestampString = "588133917.328372"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "getRestaurants(collectionId:completion:)"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "getRestaurants(latitude:longitude:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -202,12 +186,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Travel&amp;Eat/API/APIManager.swift"
-            timestampString = "588125043.925336"
+            timestampString = "588133917.3284121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "getRestaurants(collectionId:completion:)"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "getRestaurants(latitude:longitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel&amp;Eat/Controllers/TabBar/Map/MapViewController.swift"
+            timestampString = "588133945.0497839"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "searchThisArea()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

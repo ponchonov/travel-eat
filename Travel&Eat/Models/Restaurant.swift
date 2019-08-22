@@ -26,7 +26,7 @@ struct Restaurant:Codable {
     var highlights : [String]?
     var thumb : String
     var user_rating : Rating
-    var photos: [Photos]
+    var photos: [Photos]?
 }
 
 struct Location:Codable {

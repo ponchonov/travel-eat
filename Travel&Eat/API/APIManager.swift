@@ -136,4 +136,34 @@ class APIManager: NSObject {
         }
     }
     
+    func getRestaurants(latitude:String, longitude:String,completion: @escaping (_ restaurants:[Restaurant],_ error: Error?) -> Void)  {
+        var restaurants = [Restaurant]()
+        
+        let request = mutableRequest(url:  NSURL(string: "\(baseURL)/search")! as URL)
+        
+        let parameters = [
+            "lat": latitude,
+            "lon": longitude
+            ] as [String : Any]
+        
+        apiCallWith(request: request, parameters: parameters) { (data, response, error) in
+            if error == nil {
+                do {
+                    let decoder = JSONDecoder()
+                    guard let data = data else {return}
+                    let item =  try decoder.decode(Restaurants.self, from: data)
+                    
+                    for col in item.restaurants {
+                        restaurants.append(col.restaurant)
+                    }
+                    completion(restaurants, nil)
+                } catch let e {
+                    completion(restaurants, e)
+                }
+            } else {
+                completion(restaurants, error)
+            }
+        }
+    }
+    
 }

@@ -52,6 +52,8 @@
 		979F4FA8230DF86300E9C4AE /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FA7230DF86300E9C4AE /* Collection.swift */; };
 		979F4FAA230E07C300E9C4AE /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FA9230E07C300E9C4AE /* RestaurantsViewController.swift */; };
 		979F4FAC230E08B400E9C4AE /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FAB230E08B400E9C4AE /* Restaurant.swift */; };
+		979F4FB0230E197F00E9C4AE /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FAF230E197F00E9C4AE /* UIImage.swift */; };
+		979F4FB2230E1AB100E9C4AE /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FB1230E1AB100E9C4AE /* AnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		979F4FA7230DF86300E9C4AE /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		979F4FA9230E07C300E9C4AE /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
 		979F4FAB230E08B400E9C4AE /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		979F4FAF230E197F00E9C4AE /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		979F4FB1230E1AB100E9C4AE /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +204,7 @@
 				979F4F88230DCF3E00E9C4AE /* DefaultsData.swift */,
 				979F4F9E230DE45600E9C4AE /* Color.swift */,
 				979F4FA0230DEEF200E9C4AE /* UIImageView.swift */,
+				979F4FAF230E197F00E9C4AE /* UIImage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				979F4F91230DD11700E9C4AE /* MapViewController.swift */,
+				979F4FB1230E1AB100E9C4AE /* AnnotationView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -428,12 +434,14 @@
 				979F4F85230DB51900E9C4AE /* Font.swift in Sources */,
 				979F4F9B230DE09A00E9C4AE /* City.swift in Sources */,
 				979F4FA5230DF7BA00E9C4AE /* CollectionRestaurantViewCell.swift in Sources */,
+				979F4FB2230E1AB100E9C4AE /* AnnotationView.swift in Sources */,
 				979F4FA8230DF86300E9C4AE /* Collection.swift in Sources */,
 				979F4F8E230DD0F700E9C4AE /* HomeViewController.swift in Sources */,
 				979F4F56230DB44600E9C4AE /* OnboardingViewController.swift in Sources */,
 				979F4F89230DCF3E00E9C4AE /* DefaultsData.swift in Sources */,
 				979F4F90230DD10300E9C4AE /* FavoritesViewController.swift in Sources */,
 				979F4F99230DDC0100E9C4AE /* APIManager.swift in Sources */,
+				979F4FB0230E197F00E9C4AE /* UIImage.swift in Sources */,
 				979F4F9D230DE36D00E9C4AE /* CityTableViewCell.swift in Sources */,
 				979F4F94230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift in Sources */,
 				979F4F31230DB1BC00E9C4AE /* AppDelegate.swift in Sources */,

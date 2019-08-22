@@ -54,5 +54,7 @@
 	<string>Travel &amp; eat wants to know where are you to offer you the best places</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Travel &amp; eat wants to know where are you to offer you the best places</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Travel &amp; eat wants to know where are you to offer you the best places</string>
 </dict>
 </plist>
