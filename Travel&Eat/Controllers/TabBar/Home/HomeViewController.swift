@@ -69,7 +69,7 @@ class HomeViewController: MasterTabBarSectionViewController {
         [loadingIndicator].forEach(view.addSubview)
 
         NSLayoutConstraint.activate([
-                labelSearch.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 20),
+                labelSearch.topAnchor.constraint(equalTo: searchViewEmpty.bottomAnchor, constant: 10),
                 labelSearch.centerXAnchor.constraint(equalTo: view.centerXAnchor),
                 
                 searchViewEmpty.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),

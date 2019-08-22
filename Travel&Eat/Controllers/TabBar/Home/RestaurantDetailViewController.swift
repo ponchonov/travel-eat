@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class RestaurantDetailViewController: ViewController {
 
@@ -35,6 +36,36 @@ class RestaurantDetailViewController: ViewController {
         b.addTarget(self, action: #selector(markAsFavorite), for: .touchUpInside)
         return b
     }()
+    
+    private lazy var directionsButton: UIButton = {
+        let b = UIButton(frame: .zero)
+        b.translatesAutoresizingMaskIntoConstraints = false
+        b.addTarget(self, action: #selector(getDirections), for: .touchUpInside)
+        b.setTitle("Get directions", for: .normal)
+        b.backgroundColor = UIColor.tanHide
+        b.setTitleColor(.white, for: .normal)
+        b.layer.cornerRadius = 10
+        b.layer.borderWidth = 1
+        b.layer.borderColor = UIColor.black.cgColor
+        return b
+    }()
+    
+    private lazy var labelName: UILabel = {
+        let l = UILabel(frame: .zero)
+        l.translatesAutoresizingMaskIntoConstraints = false
+        l.font = UIFont(name: SFOFont.proTextBold.rawValue, size: 20)
+        l.numberOfLines = 0
+        return l
+    }()
+
+    
+    private lazy var labelAddress: UILabel = {
+       let l = UILabel(frame: .zero)
+        l.translatesAutoresizingMaskIntoConstraints = false
+        l.font = UIFont(name: SFOFont.proTextRegular.rawValue, size: 17)
+        l.numberOfLines = 0
+        return l
+    }()
 
     init(restaurant:Restaurant) {
         self.restaurant = restaurant
@@ -52,9 +83,30 @@ class RestaurantDetailViewController: ViewController {
         updateStarButton()
     }
     
+    @objc func getDirections() {
+        
+        guard let restaurant = restaurant else {return}
+        
+        let latitude: CLLocationDegrees = Double(restaurant.location.latitude)!
+        let longitude: CLLocationDegrees = Double(restaurant.location.longitude)!
+        
+        let regionDistance:CLLocationDistance = 10000
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+        ]
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = restaurant.name
+        mapItem.openInMaps(launchOptions: options)
+       
+    }
+    
     override func setupView() {
         super.setupView()
-        [imageTop, starButton].forEach(view.addSubview)
+        [imageTop, labelName, labelAddress, directionsButton, starButton].forEach(view.addSubview)
             
         NSLayoutConstraint.activate([
             imageTop.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -64,13 +116,33 @@ class RestaurantDetailViewController: ViewController {
             
             starButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             starButton.topAnchor.constraint(equalTo: imageTop.bottomAnchor, constant: 10),
+            starButton.widthAnchor.constraint(equalToConstant: 45),
+            starButton.heightAnchor.constraint(equalToConstant: 45),
+            
+            labelName.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
+            labelName.trailingAnchor.constraint(equalTo: starButton.leadingAnchor, constant: -8),
+            labelName.topAnchor.constraint(equalTo: imageTop.bottomAnchor, constant: 8),
+            
+            labelAddress.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
+            labelAddress.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
+            labelAddress.topAnchor.constraint(equalTo: starButton.bottomAnchor),
+            
+            directionsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            directionsButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            directionsButton.topAnchor.constraint(equalTo: labelAddress.bottomAnchor, constant: 26),
+            directionsButton.heightAnchor.constraint(equalToConstant: 40),
+            
             ])
         
-        if let url = URL(string: restaurant?.thumb ?? "") {
+        guard let restaurant = restaurant else {return}
+        if let url = URL(string: restaurant.thumb) {
             imageTop.setImageWithURL(url: url )
         }
-        
+        labelAddress.text = restaurant.location.address
+        labelName.text = restaurant.name
        updateStarButton()
+        
+        
     }
     
     func updateStarButton()  {

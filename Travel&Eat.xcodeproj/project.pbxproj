@@ -52,7 +52,6 @@
 		979F4FA8230DF86300E9C4AE /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FA7230DF86300E9C4AE /* Collection.swift */; };
 		979F4FAA230E07C300E9C4AE /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FA9230E07C300E9C4AE /* RestaurantsViewController.swift */; };
 		979F4FAC230E08B400E9C4AE /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FAB230E08B400E9C4AE /* Restaurant.swift */; };
-		979F4FB0230E197F00E9C4AE /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FAF230E197F00E9C4AE /* UIImage.swift */; };
 		979F4FB4230E39D000E9C4AE /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FB3230E39D000E9C4AE /* RestaurantDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -114,7 +113,6 @@
 		979F4FA7230DF86300E9C4AE /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		979F4FA9230E07C300E9C4AE /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
 		979F4FAB230E08B400E9C4AE /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		979F4FAF230E197F00E9C4AE /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		979F4FB3230E39D000E9C4AE /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,7 +202,6 @@
 				979F4F88230DCF3E00E9C4AE /* DefaultsData.swift */,
 				979F4F9E230DE45600E9C4AE /* Color.swift */,
 				979F4FA0230DEEF200E9C4AE /* UIImageView.swift */,
-				979F4FAF230E197F00E9C4AE /* UIImage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -440,7 +437,6 @@
 				979F4F89230DCF3E00E9C4AE /* DefaultsData.swift in Sources */,
 				979F4F90230DD10300E9C4AE /* FavoritesViewController.swift in Sources */,
 				979F4F99230DDC0100E9C4AE /* APIManager.swift in Sources */,
-				979F4FB0230E197F00E9C4AE /* UIImage.swift in Sources */,
 				979F4F9D230DE36D00E9C4AE /* CityTableViewCell.swift in Sources */,
 				979F4FB4230E39D000E9C4AE /* RestaurantDetailViewController.swift in Sources */,
 				979F4F94230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift in Sources */,
@@ -610,7 +606,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hector.Travel-Eat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -628,7 +624,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hector.Travel-Eat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -54,7 +54,13 @@ class MapViewController: ViewController {
         let latitude = String(format: "%f", currentMapLocation.latitude)
         let longitude = String(format: "%f", currentMapLocation.longitude)
             mapView.removeAnnotations(self.annotations)
+        searchThisAreaButton.isEnabled = false
             
+            let activityIndicator = UIActivityIndicatorView(frame: searchThisAreaButton.bounds)
+            activityIndicator.style = .gray
+            activityIndicator.hidesWhenStopped = true
+            searchThisAreaButton.addSubview(activityIndicator)
+            activityIndicator.startAnimating()
             APIManager().getRestaurants(latitude: latitude, longitude:  longitude) { (restaurants, error) in
                 self.restaurants = restaurants
                 for rest in restaurants {
@@ -69,6 +75,8 @@ class MapViewController: ViewController {
                 }
                 DispatchQueue.main.async {
                     self.mapView.showAnnotations(self.annotations, animated: true)
+                    self.searchThisAreaButton.isEnabled = true
+                    activityIndicator.stopAnimating()
                 }
             }
         }
@@ -77,7 +85,7 @@ class MapViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        self.title = "Map"
         
     }
     
@@ -153,13 +161,19 @@ extension MapViewController:MKMapViewDelegate, CLLocationManagerDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        self.currentUserLocation = userLocation.coordinate
+        
+        
+    }
     
-        let camera = MKMapCamera(lookingAtCenter: userLocation.coordinate, fromDistance: distance, pitch: pitch, heading: heading)
-        DispatchQueue.main.async {
-            mapView.setCamera(camera, animated: true)
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.currentUserLocation = locations.first?.coordinate
+        if let userLocation = self.currentUserLocation {
+            let camera = MKMapCamera(lookingAtCenter: userLocation, fromDistance: distance, pitch: pitch, heading: heading)
+            DispatchQueue.main.async {
+                self.mapView.setCamera(camera, animated: true)
+            }
+            self.locationManager.stopUpdatingLocation()
         }
-        self.locationManager.stopUpdatingLocation()
     }
    
     

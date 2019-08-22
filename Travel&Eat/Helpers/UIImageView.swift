@@ -17,17 +17,19 @@ extension UIImageView {
         if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString) as? UIImage {
             self.image = cachedImage
         } else {
-            let indicator = UIActivityIndicatorView(style: .gray)
             DispatchQueue.main.async {
+                let indicator = UIActivityIndicatorView(style: .whiteLarge)
                 indicator.translatesAutoresizingMaskIntoConstraints = false
-                self.addSubview(indicator)
+                indicator.color = .black
                 indicator.hidesWhenStopped = true
+                indicator.isHidden = false
+                self.addSubview(indicator)
                 NSLayoutConstraint.activate([
                     indicator.centerYAnchor.constraint(equalTo: self.centerYAnchor),
                     indicator.centerXAnchor.constraint(equalTo: self.centerXAnchor),
                     ])
+                self.startAnimating()
                 
-            }
             DispatchQueue.global(qos: .background).async {
                 do {
                     
@@ -46,6 +48,7 @@ extension UIImageView {
                     }
                 }
             }
+        }
         }
     }
     
