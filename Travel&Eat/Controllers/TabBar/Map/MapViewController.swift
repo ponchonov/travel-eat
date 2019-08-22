@@ -16,6 +16,9 @@ class MapViewController: MasterTabBarSectionViewController {
     var currentMapLocation:CLLocationCoordinate2D?
     var currentUserLocation:CLLocationCoordinate2D?
     var annotations = [MKPointAnnotation]()
+    let distance: CLLocationDistance = 650
+    let pitch: CGFloat = 30
+    let heading = 90.0
     
     lazy var mapView:MKMapView = {
         let map = MKMapView(frame: .zero)
@@ -63,6 +66,9 @@ class MapViewController: MasterTabBarSectionViewController {
                         self.mapView.addAnnotation(annotation)
                     }
                     self.annotations.append(annotation)
+                }
+                DispatchQueue.main.async {
+                    self.mapView.showAnnotations(self.annotations, animated: true)
                 }
             }
         }
@@ -148,6 +154,12 @@ extension MapViewController:MKMapViewDelegate, CLLocationManagerDelegate {
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         self.currentUserLocation = userLocation.coordinate
+    
+        let camera = MKMapCamera(lookingAtCenter: userLocation.coordinate, fromDistance: distance, pitch: pitch, heading: heading)
+        DispatchQueue.main.async {
+            mapView.setCamera(camera, animated: true)
+        }
+        self.locationManager.stopUpdatingLocation()
     }
    
     

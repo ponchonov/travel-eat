@@ -92,4 +92,9 @@ extension RestaurantsViewController:UICollectionViewDelegate, UICollectionViewDa
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let v = RestaurantDetailViewController(restaurant: restaurants[indexPath.row])
+        self.navigationController?.show(v, sender: nil)
+    }
+    
 }

@@ -25,24 +25,24 @@ class DefaultsData: NSObject {
     }
     
     func markAsFavorite(restaurant:Restaurant, favorite:Bool) {
-        guard let data = UserDefaults.standard.value(forKey:"songs") as? Data else {
-            return
-        }
-        if var restaurants = try? PropertyListDecoder().decode(Array<Restaurant>.self, from: data) {
-            
-            if (restaurants.contains(where: {$0.id == restaurant.id}) ) {
+        if let data = UserDefaults.standard.value(forKey:"restaurants") as? Data  {
+            if var restaurants = try? PropertyListDecoder().decode(Array<Restaurant>.self, from: data) {
                 
-                if (!favorite) {
-                    if let index = restaurants.firstIndex(where: {$0.id ==  restaurant.id}) {
-                        restaurants.remove(at: index)
+                if (restaurants.contains(where: {$0.id == restaurant.id}) ) {
+                    
+                    if (!favorite) {
+                        if let index = restaurants.firstIndex(where: {$0.id ==  restaurant.id}) {
+                            restaurants.remove(at: index)
+                        }
                     }
+                    
+                } else {
+                    restaurants.append(restaurant)
                 }
-                
-            } else {
-                restaurants.append(restaurant)
+                UserDefaults.standard.set(try? PropertyListEncoder().encode(restaurants), forKey:"restaurants")
             }
-            UserDefaults.standard.set(try? PropertyListEncoder().encode(restaurants), forKey:"restaurants")
-        } else {
+        }
+         else {
             if favorite {
                 UserDefaults.standard.set(try? PropertyListEncoder().encode([restaurant]), forKey:"restaurants")
             }
@@ -50,7 +50,7 @@ class DefaultsData: NSObject {
     }
     
     func getFavorites() -> [Restaurant] {
-        guard let data = UserDefaults.standard.value(forKey:"songs") as? Data else {
+        guard let data = UserDefaults.standard.value(forKey:"restaurants") as? Data else {
             return []
         }
         if let restaurants = try? PropertyListDecoder().decode(Array<Restaurant>.self, from: data) {
