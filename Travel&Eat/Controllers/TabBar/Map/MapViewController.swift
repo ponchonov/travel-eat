@@ -15,7 +15,8 @@ class MapViewController: MasterTabBarSectionViewController {
     var restaurants = [Restaurant]()
     var currentMapLocation:CLLocationCoordinate2D?
     var currentUserLocation:CLLocationCoordinate2D?
-
+    var annotations = [MKPointAnnotation]()
+    
     lazy var mapView:MKMapView = {
         let map = MKMapView(frame: .zero)
         map.translatesAutoresizingMaskIntoConstraints = false
@@ -49,18 +50,19 @@ class MapViewController: MasterTabBarSectionViewController {
         if let currentMapLocation = currentMapLocation {
         let latitude = String(format: "%f", currentMapLocation.latitude)
         let longitude = String(format: "%f", currentMapLocation.longitude)
-
+            mapView.removeAnnotations(self.annotations)
+            
             APIManager().getRestaurants(latitude: latitude, longitude:  longitude) { (restaurants, error) in
-                var annotations = [MKPointAnnotation]()
-                
+                self.restaurants = restaurants
                 for rest in restaurants {
                     let annotation = MKPointAnnotation()
                     annotation.title = rest.name
                     annotation.coordinate = CLLocationCoordinate2D(latitude: Double(rest.location.latitude)! , longitude: Double(rest.location.longitude)!)
+                    
                     DispatchQueue.main.async {
                         self.mapView.addAnnotation(annotation)
                     }
-                    annotations.append(annotation)
+                    self.annotations.append(annotation)
                 }
             }
         }
@@ -134,6 +136,9 @@ extension MapViewController:MKMapViewDelegate, CLLocationManagerDelegate {
             annotationView!.annotation = annotation
         }
         
+        annotationView?.canShowCallout = true
+        annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        
         let pinImage = UIImage(named: "pin")
         annotationView!.image = pinImage
         
@@ -171,6 +176,16 @@ extension MapViewController:MKMapViewDelegate, CLLocationManagerDelegate {
         
         timer?.invalidate()
         animateView.image = UIImage(named: "pin")
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+        if let title = view.annotation!.title {
+            if let rest = restaurants.first(where: {$0.name == title}) {
+                let v = RestaurantDetailViewController(restaurant: rest)
+                self.navigationController?.show(v, sender: nil)
+            }
+        }
     }
     
     
