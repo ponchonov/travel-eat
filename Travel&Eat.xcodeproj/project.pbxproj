@@ -9,10 +9,50 @@
 /* Begin PBXBuildFile section */
 		979F4F31230DB1BC00E9C4AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F30230DB1BC00E9C4AE /* AppDelegate.swift */; };
 		979F4F33230DB1BC00E9C4AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F32230DB1BC00E9C4AE /* ViewController.swift */; };
-		979F4F36230DB1BC00E9C4AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F34230DB1BC00E9C4AE /* Main.storyboard */; };
 		979F4F38230DB1C000E9C4AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F37230DB1C000E9C4AE /* Assets.xcassets */; };
 		979F4F3B230DB1C000E9C4AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F39230DB1C000E9C4AE /* LaunchScreen.storyboard */; };
 		979F4F46230DB1C000E9C4AE /* Travel_EatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F45230DB1C000E9C4AE /* Travel_EatTests.swift */; };
+		979F4F56230DB44600E9C4AE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F55230DB44600E9C4AE /* OnboardingViewController.swift */; };
+		979F4F57230DB44600E9C4AE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F55230DB44600E9C4AE /* OnboardingViewController.swift */; };
+		979F4F59230DB48900E9C4AE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F58230DB48900E9C4AE /* OnboardingPageViewController.swift */; };
+		979F4F5A230DB48900E9C4AE /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F58230DB48900E9C4AE /* OnboardingPageViewController.swift */; };
+		979F4F72230DB50500E9C4AE /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F60230DB50400E9C4AE /* SF-Pro-Text-Black.otf */; };
+		979F4F73230DB50500E9C4AE /* SF-Pro-Text-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F61230DB50400E9C4AE /* SF-Pro-Text-BlackItalic.otf */; };
+		979F4F74230DB50500E9C4AE /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F62230DB50400E9C4AE /* SF-Pro-Text-Bold.otf */; };
+		979F4F75230DB50500E9C4AE /* SF-Pro-Text-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F63230DB50400E9C4AE /* SF-Pro-Text-UltralightItalic.otf */; };
+		979F4F76230DB50500E9C4AE /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F64230DB50400E9C4AE /* SF-Pro-Text-Thin.otf */; };
+		979F4F77230DB50500E9C4AE /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F65230DB50500E9C4AE /* SF-Pro-Text-Heavy.otf */; };
+		979F4F78230DB50500E9C4AE /* SF-Pro-Text-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F66230DB50500E9C4AE /* SF-Pro-Text-Ultralight.otf */; };
+		979F4F79230DB50500E9C4AE /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F67230DB50500E9C4AE /* SF-Pro-Text-Light.otf */; };
+		979F4F7A230DB50500E9C4AE /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F68230DB50500E9C4AE /* SF-Pro-Text-BoldItalic.otf */; };
+		979F4F7B230DB50500E9C4AE /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F69230DB50500E9C4AE /* SF-Pro-Text-Semibold.otf */; };
+		979F4F7C230DB50500E9C4AE /* SF-Pro-Text-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F6A230DB50500E9C4AE /* SF-Pro-Text-ThinItalic.otf */; };
+		979F4F7D230DB50500E9C4AE /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F6B230DB50500E9C4AE /* SF-Pro-Text-Regular.otf */; };
+		979F4F7E230DB50500E9C4AE /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F6C230DB50500E9C4AE /* SF-Pro-Text-Medium.otf */; };
+		979F4F7F230DB50500E9C4AE /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F6D230DB50500E9C4AE /* SF-Pro-Text-HeavyItalic.otf */; };
+		979F4F80230DB50500E9C4AE /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F6E230DB50500E9C4AE /* SF-Pro-Text-MediumItalic.otf */; };
+		979F4F81230DB50500E9C4AE /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F6F230DB50500E9C4AE /* SF-Pro-Text-SemiboldItalic.otf */; };
+		979F4F82230DB50500E9C4AE /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F70230DB50500E9C4AE /* SF-Pro-Text-LightItalic.otf */; };
+		979F4F83230DB50500E9C4AE /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 979F4F71230DB50500E9C4AE /* SF-Pro-Text-RegularItalic.otf */; };
+		979F4F85230DB51900E9C4AE /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F84230DB51900E9C4AE /* Font.swift */; };
+		979F4F87230DBBCC00E9C4AE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F86230DBBCC00E9C4AE /* View.swift */; };
+		979F4F89230DCF3E00E9C4AE /* DefaultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F88230DCF3E00E9C4AE /* DefaultsData.swift */; };
+		979F4F8C230DD0AD00E9C4AE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F8B230DD0AD00E9C4AE /* TabBarViewController.swift */; };
+		979F4F8E230DD0F700E9C4AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F8D230DD0F700E9C4AE /* HomeViewController.swift */; };
+		979F4F90230DD10300E9C4AE /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F8F230DD10300E9C4AE /* FavoritesViewController.swift */; };
+		979F4F92230DD11700E9C4AE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F91230DD11700E9C4AE /* MapViewController.swift */; };
+		979F4F94230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F93230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift */; };
+		979F4F99230DDC0100E9C4AE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F98230DDC0100E9C4AE /* APIManager.swift */; };
+		979F4F9B230DE09A00E9C4AE /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F9A230DE09A00E9C4AE /* City.swift */; };
+		979F4F9D230DE36D00E9C4AE /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F9C230DE36D00E9C4AE /* CityTableViewCell.swift */; };
+		979F4F9F230DE45600E9C4AE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4F9E230DE45600E9C4AE /* Color.swift */; };
+		979F4FA1230DEEF200E9C4AE /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FA0230DEEF200E9C4AE /* UIImageView.swift */; };
+		979F4FA3230DF4F900E9C4AE /* CitySelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FA2230DF4F900E9C4AE /* CitySelectedViewController.swift */; };
+		979F4FA5230DF7BA00E9C4AE /* CollectionRestaurantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FA4230DF7BA00E9C4AE /* CollectionRestaurantViewCell.swift */; };
+		979F4FA8230DF86300E9C4AE /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FA7230DF86300E9C4AE /* Collection.swift */; };
+		979F4FAA230E07C300E9C4AE /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FA9230E07C300E9C4AE /* RestaurantsViewController.swift */; };
+		979F4FAC230E08B400E9C4AE /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FAB230E08B400E9C4AE /* Restaurant.swift */; };
+		979F4FB4230E39D000E9C4AE /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F4FB3230E39D000E9C4AE /* RestaurantDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +69,51 @@
 		979F4F2D230DB1BC00E9C4AE /* Travel&Eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel&Eat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		979F4F30230DB1BC00E9C4AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		979F4F32230DB1BC00E9C4AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		979F4F35230DB1BC00E9C4AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		979F4F37230DB1C000E9C4AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		979F4F3A230DB1C000E9C4AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		979F4F3C230DB1C000E9C4AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		979F4F41230DB1C000E9C4AE /* Travel&EatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Travel&EatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		979F4F45230DB1C000E9C4AE /* Travel_EatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_EatTests.swift; sourceTree = "<group>"; };
 		979F4F47230DB1C000E9C4AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979F4F55230DB44600E9C4AE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		979F4F58230DB48900E9C4AE /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		979F4F60230DB50400E9C4AE /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
+		979F4F61230DB50400E9C4AE /* SF-Pro-Text-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BlackItalic.otf"; sourceTree = "<group>"; };
+		979F4F62230DB50400E9C4AE /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		979F4F63230DB50400E9C4AE /* SF-Pro-Text-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-UltralightItalic.otf"; sourceTree = "<group>"; };
+		979F4F64230DB50400E9C4AE /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
+		979F4F65230DB50500E9C4AE /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		979F4F66230DB50500E9C4AE /* SF-Pro-Text-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Ultralight.otf"; sourceTree = "<group>"; };
+		979F4F67230DB50500E9C4AE /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		979F4F68230DB50500E9C4AE /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		979F4F69230DB50500E9C4AE /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		979F4F6A230DB50500E9C4AE /* SF-Pro-Text-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-ThinItalic.otf"; sourceTree = "<group>"; };
+		979F4F6B230DB50500E9C4AE /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		979F4F6C230DB50500E9C4AE /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		979F4F6D230DB50500E9C4AE /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		979F4F6E230DB50500E9C4AE /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		979F4F6F230DB50500E9C4AE /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		979F4F70230DB50500E9C4AE /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		979F4F71230DB50500E9C4AE /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		979F4F84230DB51900E9C4AE /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		979F4F86230DBBCC00E9C4AE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		979F4F88230DCF3E00E9C4AE /* DefaultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsData.swift; sourceTree = "<group>"; };
+		979F4F8B230DD0AD00E9C4AE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		979F4F8D230DD0F700E9C4AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		979F4F8F230DD10300E9C4AE /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		979F4F91230DD11700E9C4AE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		979F4F93230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTabBarSectionViewController.swift; sourceTree = "<group>"; };
+		979F4F98230DDC0100E9C4AE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		979F4F9A230DE09A00E9C4AE /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		979F4F9C230DE36D00E9C4AE /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		979F4F9E230DE45600E9C4AE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		979F4FA0230DEEF200E9C4AE /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		979F4FA2230DF4F900E9C4AE /* CitySelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectedViewController.swift; sourceTree = "<group>"; };
+		979F4FA4230DF7BA00E9C4AE /* CollectionRestaurantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRestaurantViewCell.swift; sourceTree = "<group>"; };
+		979F4FA7230DF86300E9C4AE /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		979F4FA9230E07C300E9C4AE /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		979F4FAB230E08B400E9C4AE /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		979F4FB3230E39D000E9C4AE /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +155,11 @@
 		979F4F2F230DB1BC00E9C4AE /* Travel&Eat */ = {
 			isa = PBXGroup;
 			children = (
+				979F4F53230DB34000E9C4AE /* Controllers */,
+				979F4F52230DB33400E9C4AE /* Helpers */,
+				979F4F51230DB32E00E9C4AE /* API */,
+				979F4F50230DB32800E9C4AE /* Models */,
 				979F4F30230DB1BC00E9C4AE /* AppDelegate.swift */,
-				979F4F32230DB1BC00E9C4AE /* ViewController.swift */,
-				979F4F34230DB1BC00E9C4AE /* Main.storyboard */,
 				979F4F37230DB1C000E9C4AE /* Assets.xcassets */,
 				979F4F39230DB1C000E9C4AE /* LaunchScreen.storyboard */,
 				979F4F3C230DB1C000E9C4AE /* Info.plist */,
@@ -94,6 +174,130 @@
 				979F4F47230DB1C000E9C4AE /* Info.plist */,
 			);
 			path = "Travel&EatTests";
+			sourceTree = "<group>";
+		};
+		979F4F50230DB32800E9C4AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F9A230DE09A00E9C4AE /* City.swift */,
+				979F4FA7230DF86300E9C4AE /* Collection.swift */,
+				979F4FAB230E08B400E9C4AE /* Restaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		979F4F51230DB32E00E9C4AE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F98230DDC0100E9C4AE /* APIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		979F4F52230DB33400E9C4AE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F5B230DB4C900E9C4AE /* Fonts */,
+				979F4F86230DBBCC00E9C4AE /* View.swift */,
+				979F4F88230DCF3E00E9C4AE /* DefaultsData.swift */,
+				979F4F9E230DE45600E9C4AE /* Color.swift */,
+				979F4FA0230DEEF200E9C4AE /* UIImageView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		979F4F53230DB34000E9C4AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F54230DB41B00E9C4AE /* Onboarding */,
+				979F4F8A230DD07D00E9C4AE /* TabBar */,
+				979F4F32230DB1BC00E9C4AE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		979F4F54230DB41B00E9C4AE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F58230DB48900E9C4AE /* OnboardingPageViewController.swift */,
+				979F4F55230DB44600E9C4AE /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		979F4F5B230DB4C900E9C4AE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F5F230DB4E500E9C4AE /* SFO-Pro-text */,
+				979F4F84230DB51900E9C4AE /* Font.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		979F4F5F230DB4E500E9C4AE /* SFO-Pro-text */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F60230DB50400E9C4AE /* SF-Pro-Text-Black.otf */,
+				979F4F61230DB50400E9C4AE /* SF-Pro-Text-BlackItalic.otf */,
+				979F4F62230DB50400E9C4AE /* SF-Pro-Text-Bold.otf */,
+				979F4F68230DB50500E9C4AE /* SF-Pro-Text-BoldItalic.otf */,
+				979F4F65230DB50500E9C4AE /* SF-Pro-Text-Heavy.otf */,
+				979F4F6D230DB50500E9C4AE /* SF-Pro-Text-HeavyItalic.otf */,
+				979F4F67230DB50500E9C4AE /* SF-Pro-Text-Light.otf */,
+				979F4F70230DB50500E9C4AE /* SF-Pro-Text-LightItalic.otf */,
+				979F4F6C230DB50500E9C4AE /* SF-Pro-Text-Medium.otf */,
+				979F4F6E230DB50500E9C4AE /* SF-Pro-Text-MediumItalic.otf */,
+				979F4F6B230DB50500E9C4AE /* SF-Pro-Text-Regular.otf */,
+				979F4F71230DB50500E9C4AE /* SF-Pro-Text-RegularItalic.otf */,
+				979F4F69230DB50500E9C4AE /* SF-Pro-Text-Semibold.otf */,
+				979F4F6F230DB50500E9C4AE /* SF-Pro-Text-SemiboldItalic.otf */,
+				979F4F64230DB50400E9C4AE /* SF-Pro-Text-Thin.otf */,
+				979F4F6A230DB50500E9C4AE /* SF-Pro-Text-ThinItalic.otf */,
+				979F4F66230DB50500E9C4AE /* SF-Pro-Text-Ultralight.otf */,
+				979F4F63230DB50400E9C4AE /* SF-Pro-Text-UltralightItalic.otf */,
+			);
+			path = "SFO-Pro-text";
+			sourceTree = "<group>";
+		};
+		979F4F8A230DD07D00E9C4AE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F8B230DD0AD00E9C4AE /* TabBarViewController.swift */,
+				979F4F93230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift */,
+				979F4F95230DD6EC00E9C4AE /* Home */,
+				979F4F96230DD6F200E9C4AE /* Favorites */,
+				979F4F97230DD6FA00E9C4AE /* Map */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		979F4F95230DD6EC00E9C4AE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F8D230DD0F700E9C4AE /* HomeViewController.swift */,
+				979F4F9C230DE36D00E9C4AE /* CityTableViewCell.swift */,
+				979F4FA2230DF4F900E9C4AE /* CitySelectedViewController.swift */,
+				979F4FA4230DF7BA00E9C4AE /* CollectionRestaurantViewCell.swift */,
+				979F4FA9230E07C300E9C4AE /* RestaurantsViewController.swift */,
+				979F4FB3230E39D000E9C4AE /* RestaurantDetailViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		979F4F96230DD6F200E9C4AE /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F8F230DD10300E9C4AE /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		979F4F97230DD6FA00E9C4AE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				979F4F91230DD11700E9C4AE /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +381,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979F4F7B230DB50500E9C4AE /* SF-Pro-Text-Semibold.otf in Resources */,
+				979F4F7C230DB50500E9C4AE /* SF-Pro-Text-ThinItalic.otf in Resources */,
+				979F4F83230DB50500E9C4AE /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				979F4F75230DB50500E9C4AE /* SF-Pro-Text-UltralightItalic.otf in Resources */,
 				979F4F3B230DB1C000E9C4AE /* LaunchScreen.storyboard in Resources */,
+				979F4F74230DB50500E9C4AE /* SF-Pro-Text-Bold.otf in Resources */,
+				979F4F72230DB50500E9C4AE /* SF-Pro-Text-Black.otf in Resources */,
+				979F4F7D230DB50500E9C4AE /* SF-Pro-Text-Regular.otf in Resources */,
+				979F4F79230DB50500E9C4AE /* SF-Pro-Text-Light.otf in Resources */,
+				979F4F7E230DB50500E9C4AE /* SF-Pro-Text-Medium.otf in Resources */,
+				979F4F7A230DB50500E9C4AE /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				979F4F81230DB50500E9C4AE /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				979F4F78230DB50500E9C4AE /* SF-Pro-Text-Ultralight.otf in Resources */,
+				979F4F82230DB50500E9C4AE /* SF-Pro-Text-LightItalic.otf in Resources */,
+				979F4F7F230DB50500E9C4AE /* SF-Pro-Text-HeavyItalic.otf in Resources */,
 				979F4F38230DB1C000E9C4AE /* Assets.xcassets in Resources */,
-				979F4F36230DB1BC00E9C4AE /* Main.storyboard in Resources */,
+				979F4F80230DB50500E9C4AE /* SF-Pro-Text-MediumItalic.otf in Resources */,
+				979F4F76230DB50500E9C4AE /* SF-Pro-Text-Thin.otf in Resources */,
+				979F4F73230DB50500E9C4AE /* SF-Pro-Text-BlackItalic.otf in Resources */,
+				979F4F77230DB50500E9C4AE /* SF-Pro-Text-Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +418,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979F4FAC230E08B400E9C4AE /* Restaurant.swift in Sources */,
+				979F4F92230DD11700E9C4AE /* MapViewController.swift in Sources */,
+				979F4F8C230DD0AD00E9C4AE /* TabBarViewController.swift in Sources */,
+				979F4FA3230DF4F900E9C4AE /* CitySelectedViewController.swift in Sources */,
+				979F4F59230DB48900E9C4AE /* OnboardingPageViewController.swift in Sources */,
 				979F4F33230DB1BC00E9C4AE /* ViewController.swift in Sources */,
+				979F4F87230DBBCC00E9C4AE /* View.swift in Sources */,
+				979F4F9F230DE45600E9C4AE /* Color.swift in Sources */,
+				979F4FAA230E07C300E9C4AE /* RestaurantsViewController.swift in Sources */,
+				979F4FA1230DEEF200E9C4AE /* UIImageView.swift in Sources */,
+				979F4F85230DB51900E9C4AE /* Font.swift in Sources */,
+				979F4F9B230DE09A00E9C4AE /* City.swift in Sources */,
+				979F4FA5230DF7BA00E9C4AE /* CollectionRestaurantViewCell.swift in Sources */,
+				979F4FA8230DF86300E9C4AE /* Collection.swift in Sources */,
+				979F4F8E230DD0F700E9C4AE /* HomeViewController.swift in Sources */,
+				979F4F56230DB44600E9C4AE /* OnboardingViewController.swift in Sources */,
+				979F4F89230DCF3E00E9C4AE /* DefaultsData.swift in Sources */,
+				979F4F90230DD10300E9C4AE /* FavoritesViewController.swift in Sources */,
+				979F4F99230DDC0100E9C4AE /* APIManager.swift in Sources */,
+				979F4F9D230DE36D00E9C4AE /* CityTableViewCell.swift in Sources */,
+				979F4FB4230E39D000E9C4AE /* RestaurantDetailViewController.swift in Sources */,
+				979F4F94230DD61A00E9C4AE /* MasterTabBarSectionViewController.swift in Sources */,
 				979F4F31230DB1BC00E9C4AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +449,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				979F4F46230DB1C000E9C4AE /* Travel_EatTests.swift in Sources */,
+				979F4F5A230DB48900E9C4AE /* OnboardingPageViewController.swift in Sources */,
+				979F4F57230DB44600E9C4AE /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +465,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		979F4F34230DB1BC00E9C4AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				979F4F35230DB1BC00E9C4AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		979F4F39230DB1C000E9C4AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -370,7 +606,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hector.Travel-Eat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -388,7 +624,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hector.Travel-Eat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

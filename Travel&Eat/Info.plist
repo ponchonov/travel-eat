@@ -22,8 +22,6 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -41,5 +39,22 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF-Pro-Text-Bold.otf</string>
+		<string>SF-Pro-Text-Regular.otf</string>
+		<string>SF-Pro-Text-Medium.otf</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationUsageDescription</key>
+	<string>Travel &amp; eat wants to know where are you to offer you the best places</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Travel &amp; eat wants to know where are you to offer you the best places</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Travel &amp; eat wants to know where are you to offer you the best places</string>
 </dict>
 </plist>
